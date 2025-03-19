@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .colorChange{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    
+ <div id="appid">
+    <div v-bind:class="vueClass">David Fatoki</div>
+  </div>
+
+    <script>
+     const app = Vue.createApp({
+        data(){
+            return{
+               vueClass: "colorChange"
+            }
+        }
+     })
+    app.mount(app)
+    </script>
+
+</body>
+</html>
